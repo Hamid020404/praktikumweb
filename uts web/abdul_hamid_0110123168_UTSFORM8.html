@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    width: 600px;
+}
+form {
+        margin: 20px;
+      }
+
+      label,
+      input,
+      select,
+      textarea {
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+      }
+
+      label {
+        width: 120px;
+        text-align: right;
+        padding-right: 10px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 250px;
+      }
+      input[type="file"]{
+        margin-left: 300px;
+      }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><b>kelola montir / mekanik</b></legend>
+        <table style="width: 100px; height: 100px;"><br>
+            <label for="Nama Mekanik">Nama Mekanik :</label>
+            <input type="text"><br><br>
+            <label for="Kategori" cols="10" rows="10">kategori :</label>
+            <select>
+                <option value="Senior Mekanik">Senior Mekanik</option>
+                <option value="Senior Mekanik">Junior Mekanik</option>
+                <option value="Senior Mekanik">Magang Mekanik</option>
+            </select><br><br>
+            <label for="Deskripsi Skill">Deskripsi Skill :</label>
+            <textarea id="Deskripsi Skill" name="Deskripsi Skill" rows="4" required></textarea><br><br>
+            <label for="kemampuan">Kemampuan:</label>
+            <div>
+                <input type="checkbox" id="kemampuan" name="kemampuan" />
+                <label for="horns" style="text-align: left;">service ringan</label>
+              </div>
+              <div>
+                <input type="checkbox" id="kemampuan" name="kemampuan" />
+                <label for="horns" style="text-align: left;">service besar</label>
+              </div>
+              <div>
+                <input type="checkbox" id="kemampuan" name="kemampuan" />
+                <label for="horns" style="text-align: left;" >body Repair</label>
+              </div>
+              <label for="tempat, tanggal lahir">tempat, tanggal lahir</label>
+              <input type="text"><br><br>
+              <label for="tempat, tanggal lahir">tempat, tanggal lahir</label>
+              <input type="date">
+              <input type="file"/><br><br>
+              <input type="submit" value="Simpan" />
+              <input type="reset" value="Batal" />
+        </table>
+    </fieldset>
+</body>
+</html>
